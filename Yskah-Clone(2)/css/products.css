@@ -1,0 +1,33 @@
+body {
+  /* display: flex;
+            justify-content: center; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(105, 105, 105);
+}
+
+.productlist {
+  padding: 10px;
+  height: 100dvh;
+  width: 95dvw;
+  /* background: rgb(18, 14, 14); */
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.productlist .card {
+  /* margin: 10px; */
+  height: 400px;
+  margin: 10px;
+}
+.productlist .card img {
+  /* margin: 10px; */
+  /* width: 200px; */
+  height: 250px;
+  object-fit: cover;
+}

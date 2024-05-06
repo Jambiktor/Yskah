@@ -1,0 +1,68 @@
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+}
+
+.productlist {
+  padding: 10px;
+  height: 100vh;
+  width: 95vw;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productlist .card {
+  height: 400px;
+  margin: 10px;
+}
+
+.remove_button {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 70%;
+}
+
+.remove_button button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: red;
+  color: white;
+}
+
+.productlist .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.productlist .card .add_button {
+  height: 400px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productlist .card .add_button a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productlist .card .add_button h3 {
+  color: gray;
+}
+
+.productlist .card .add_button img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
