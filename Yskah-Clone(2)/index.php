@@ -38,15 +38,12 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav nav-fill  ">
+                <ul class="navbar-nav nav-fill gap-2 p-0">
                     <li class="nav-item">
                         <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
@@ -124,9 +121,9 @@
     </div>
 
     <footer>
-        <div class="footer_content">
+        <div class="footer_content ">
             <div class="footer_logo">
-                <img src="img\LOGO.png" alt="">
+                <img id="footer-logo" src="img\LOGO.png" alt="">
             </div>
             <div class="footer_details">
                 <h4>SOCIALS</h4>
