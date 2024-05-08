@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\index.css">
-
 </head>
 
 <body>
@@ -40,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-fill gap-2 p-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-dark" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Product</a>
+                        <a class="nav-link text-dark" href="index-products.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
