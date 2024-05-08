@@ -44,7 +44,7 @@
                         <a class="nav-link text-dark" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" aria-current="page" href="index_products.php">Product</a>
+                        <a class="nav-link text-dark active" aria-current="page" href="index-products.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
