@@ -10,20 +10,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\index_product_preview1.css" />
+    <link rel="stylesheet" href="css\index_product_preview.css" />
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid ms-3 d-flex align-items-center justify-content-center justify-content-md-between">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div
+            class="container-fluid ms-0 ms-md-3 d-flex align-items-center justify-content-center justify-content-md-between">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="width:15px"></span>
             </button>
 
-            <a class="navbar-brand" href="#">
-                <img src="img\LOGOO.png" alt="YsakaLogo" class="d-inline-block float-start" style="width: 130px">
+            <a id="img" class="navbar-brand" href="#">
+                <img src="img\LOGOO.png" alt="YsakaLogo" class="d-inline-block float-start" style="width: 110px">
             </a>
 
             <div class="d-flex align-items-center justify-content-center justify-content-md-end d-lg-none">
@@ -40,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-fill gap-2 p-0">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.php">Home</a>
+                        <a class="nav-link text-dark active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" aria-current="page" href="index-products.php">Product</a>
+                        <a class="nav-link text-dark" href="index-products.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
@@ -51,8 +51,9 @@
                 </ul>
             </div>
 
-            <div class="d-lg-flex align-items-center justify-content-center justify-content-md-end d-md-none me-2">
-                <div id="login-link" class="me-2">
+            <div
+                class="d-flex flex-row d-md-none d-lg-flex align-items-center justify-content-center justify-content-md-end  me-2">
+                <div id="login-link" class="me-0 me-md-2 ">
                     <a href="login_form.php" class="" style="text-decoration: none; color: black">
                         <p class="mb-0">Log in</p>
                     </a>
