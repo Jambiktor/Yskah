@@ -6,13 +6,16 @@
   border-radius: 20px;
   border: 1px solid gray;
 }
+
 body > div.container.p-4 > div > div.col-7.m-1.border {
   display: flex;
   flex-wrap: wrap;
 }
+
 body > div.container.p-4 > div > div.col-4.m-1.border > img {
   height: 150px;
 }
+
 .user_id {
   margin-top: 10px;
   width: 100%;
@@ -30,6 +33,7 @@ body > div.container.p-4 > div > div.col-4.m-1.border > img {
   width: 200px;
   /* background: gray; */
 }
+
 body > div.container.p-4 > div > div.col-12.m-1.border {
   display: flex;
   flex-wrap: wrap;

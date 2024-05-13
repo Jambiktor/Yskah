@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <script defer src="js\bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="css\navigation_bar.css"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>

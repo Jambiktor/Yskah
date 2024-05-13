@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-fill gap-2 p-0">
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link text-dark " href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="index-products.php">Product</a>
+                        <a class="nav-link text-dark active" aria-current="page" href="index-products.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
@@ -68,7 +68,7 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 d-flex flex-row m-1 mt-4 mb-4">
+        <div class="row row-cols-1 row-cols-md-4 d-flex flex-row m-1 mt-4 mb-4">
             <?php 
             $res = mysqli_query($conn, "SELECT * FROM products");
             while($row = mysqli_fetch_assoc($res)){
