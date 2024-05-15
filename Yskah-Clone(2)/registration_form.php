@@ -33,8 +33,8 @@
                     <label class="input-group-text" for="sex">Sex</label>
                     <select class="form-select" id="sex" name="sex">
                         <option selected>Choose...</option>
-                        <option value="female">Female</option>
-                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
                     </select>
                 </div>
                 <div class="form-floating mb-3 w-100">
