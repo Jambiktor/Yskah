@@ -89,12 +89,12 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-4 d-flex flex-row m-1 mt-4 mb-4">
+        <div class="row row-cols-1 row-cols-md-4 m-1 mt-4 mb-4">
             <?php 
             $res = mysqli_query($conn, "SELECT * FROM products");
             while($row = mysqli_fetch_assoc($res)){
         ?>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col">
                 <div class="card w-100">
                     <img src="product-images/<?php echo $row['image_file']?>" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -109,8 +109,9 @@
             <?php }?>
         </div>
     </div>
+
     <footer>
-        <div class="footer_content">
+        <div class="footer_content flex-wrap">
 
             <div class="footer_logo">
                 <img src="img\LOGO.png" alt="">

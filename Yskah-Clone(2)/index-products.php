@@ -89,10 +89,8 @@
         </div>
     </div>
 
-
-
     <footer>
-        <div class="footer_content ">
+        <div class="footer_content flex-wrap">
             <div class="footer_logo">
                 <img id="footer-logo" src="img\LOGO.png" alt="">
             </div>

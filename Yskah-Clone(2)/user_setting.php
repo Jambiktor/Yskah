@@ -15,40 +15,45 @@
 </head>
 
 <body>
-    <div class="navi-bar">
-        <div class="navi-items">
-            <div class="logo_search">
-                <div class="logo">
-                    <a href="user_landing_page.php"><img src="LOGO.png" /></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div
+            class="container-fluid ms-0 ms-md-3 d-flex align-items-center justify-content-center justify-content-md-between">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="width:15px"></span>
+            </button>
+
+            <a id="img" class="navbar-brand" href="#">
+                <img src="img\LOGOO.png" alt="YsakaLogo" class="d-inline-block float-start" style="width: 110px">
+            </a>
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-end d-lg-none">
+                <div class="d-none d-md-block">
+                    <a href="login_form.php" class="">
+
+                    </a>
+                </div>
+                <div class="d-none d-md-block">
+                    <img src="img\default-profile.jpg" alt="profile" class="" style="width: 50px">
                 </div>
             </div>
 
-            <div class="navi-btn">
-                <div class="buttons">
-                    <i class="bx bx-home-alt"></i><a href="user_landing_page.php">Home</a>
-                </div>
-                <div class="buttons">
-                    <i class="bx bx-shopping-bag"></i><a href="user_products.php">Products</a>
-                </div>
-                <div class="buttons">
-                    <i class="bx bx-cart"></i><a href="#">Cart</a>
-                </div>
-                <div class="buttons">
-                    <i class="bx bx-phone"></i><a href="#">About Us</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill gap-2 p-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="admin.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="admin-products.php">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About Us</a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="user">
-                <div class="name">
-                    <!-- <p></p>
-          </div>
-
-          <div class="photo">
-            <img src="img\User.jpg" alt="" /> -->
-                </div>
-            </div>
         </div>
-    </div>
+    </nav>
 
 
     <?php

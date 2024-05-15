@@ -40,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-fill gap-2 p-0">
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" aria-current="page" href="admin.php">Home</a>
+                        <a class="nav-link text-dark " href="admin.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="admin-products.php">Product</a>
+                        <a class="nav-link text-dark active" aria-current="page" href="admin-products.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">About Us</a>
@@ -114,43 +114,49 @@
         </div>
     </nav>
 
-    <div class="productlist">
-        <?php 
-    $res = mysqli_query($conn, "SELECT * FROM products");
-    while($row = mysqli_fetch_assoc($res)){
-    ?>
-        <div class="card" style="width: 16.5rem">
-            <img src="product-images/<?php echo $row['image_file']?>" class="card-img-top" alt="..." />
-            <div class="remove_button">
-                <form action="delete-product.php" method="POST"
-                    onsubmit="return confirm('Are you sure you want to remove this product?');">
-                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                    <button type="submit" name="remove">Remove</button>
-                </form>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-4 d-flex flex-row m-1 mt-4 mb-4 gy-2">
+            <?php 
+                $res = mysqli_query($conn, "SELECT * FROM products");
+                while($row = mysqli_fetch_assoc($res)){
+            ?>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card w-100">
+                    <img src="product-images/<?php echo $row['image_file']?>" class="card-img-top" alt="..." />
+                    <div class="remove_button">
+                        <form action="delete-product.php" method="POST"
+                            onsubmit="return confirm('Are you sure you want to remove this product?');">
+                            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                            <button type="submit" name="remove">Remove</button>
+                        </form>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $row['product_name']?></h5>
+                        <p class="card-text">
+                        <p>Php <?php echo $row['price']?>.00</p>
+                        </p>
+                        <a href="admin_product_preview.php" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $row['product_name']?></h5>
-                <p class="card-text">
-                <p>Php <?php echo $row['price']?>.00</p>
-                </p>
-                <a href="admin_product_preview.php" class="btn btn-primary">View Product</a>
-            </div>
-        </div>
-        <?php }?>
-
-        <div class="card" style="width: 16.5rem">
-            <div class="add_button">
-                <a href="admin-adding-products-form.php">
-                    <img src="img\Add_Button.png" class="card-img-top" alt="..." />
-                    <h3>Add Product</h3>
-                </a>
+            <?php }?>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card w-100">
+                    <div class="add_button">
+                        <a href="admin-adding-products-form.php">
+                            <img src="img\Add_Button.png" class="card-img-top" alt="..." />
+                            <h3>Add Product</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="footer_content">
+        <div class="footer_content flex-wrap">
             <div class="footer_logo">
                 <img id="footer-logo" src="img\LOGO.png" alt="">
             </div>
